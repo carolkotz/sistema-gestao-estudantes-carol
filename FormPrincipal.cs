@@ -41,5 +41,25 @@ namespace sistema_gestao_estudantes
         {
 
         }
+
+        private void btnCadastrar_Click_Click(object sender, EventArgs e)
+        {
+            Estudante estudante = new Estudante();
+            string nome = textBoxNome.Text;
+            string sobrenome = textBoxSobrenome.Text;
+            DateTime nascimento = dateTimePickerNascimento.Value;
+            string telefone = textBoxTelefone.Text;
+            string endereco = textBoxEndereco.Text;
+            string genero = "Feminino";
+
+                if (radioButtonMasculino.Checked)
+            {
+                genero = "Masculino";
+            }
+
+            int anoDeNascimento = DateTimePickerNascimento.Value.Year;
+            int anoAtual = DateTime.New.Year;
+
+        }
     }
 }
